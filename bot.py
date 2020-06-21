@@ -21,6 +21,7 @@ async def on_ready():
     req = requests.get(f"http://{config.aurora_ip}:16021/api/v1/{config.aurora_auth}")
     json = req.json()
     if json["name"]:
+        bot.deviceName = json["name"]
         print(
             f"Nanoleaf Auroras found! I see {json['name']} with a firmware version of {json['firmwareVersion']} and a serial number of {json['serialNo']}.\nIf these panels are the incorrect ones, double check the IP you specified in the console. Elsewise, enjoy the bot!\n\nCreated by Jack LaFond (@jacc on GitHub)\n-- Special Thanks:\n- @venoras/Huecord\n\nAny issues? Feel free to open an issue on the GitHub repository. PRs are welcomed!"
         )
