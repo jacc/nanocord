@@ -32,7 +32,7 @@ class Lights(commands.Cog, name="Lighting Commands"):
 
         if req.status_code == 204:
             await Utils().sendEmbed(
-                ctx, description="Successfully turned on Nanoleaf Auroras",
+                ctx, description=f"Successfully turned {self.bot.deviceName} on.",
             )
         else:
             await Utils().sendEmbed(
@@ -55,7 +55,7 @@ class Lights(commands.Cog, name="Lighting Commands"):
 
         if req.status_code == 204:
             await Utils().sendEmbed(
-                ctx, description=f"Successfully turned {self.bot.deviceName} on!",
+                ctx, description=f"Successfully turned {self.bot.deviceName} off.",
             )
         else:
             await Utils().sendEmbed(
