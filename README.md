@@ -15,8 +15,7 @@
 ## Dependencies
 
 - [discord.py](https://github.com/Rapptz/discord.py)
-
-## Setup
+- [requests](https://pypi.org/project/requests/)
 
 ## Setup
 
