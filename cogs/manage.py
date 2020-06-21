@@ -27,7 +27,7 @@ class Manage(commands.Cog, name="Manage Aurora Commands"):
             if req.status_code == 200:
                 await Utils().sendEmbed(
                     ctx,
-                    description=f"Your {self.bot.deviceName} are connected and should be flashing green!",
+                    description=f"Your **{self.bot.deviceName}** are connected and should be flashing green!",
                 )
         except Exception as e:
             await Utils().sendEmbed(

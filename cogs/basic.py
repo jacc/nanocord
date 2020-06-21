@@ -48,7 +48,7 @@ class Essentials(commands.Cog, name="Essential Commands"):
         await Utils().sendEmbed(
             ctx,
             title="Nanocord - About",
-            description="Created by [@jacc](https://github.com/jacc), heavily inspired by [@venoras/Huecord](https://github.com/venoras/Huecord). \n\nCreated with :heart_decoration: in the USA (and under 2 hours!)\n\nAll rights reserved to the respective owners of copyrighted material, I don't know how legal stuff works but I don't own or claim to own the name Nanoleaf Auroras or Nanoleaf at all. If that's a problem contact me?",
+            description="Created by [@jacc](https://github.com/jacc), heavily inspired by [@venoras/Huecord](https://github.com/venoras/Huecord). \n\nCreated with :heart_decoration: in the USA (and under 4 hours!)\n\nAll rights reserved to the respective owners of copyrighted material, I don't know how legal stuff works but I don't own or claim to own the name Nanoleaf Auroras or Nanoleaf at all. If that's a problem contact me?",
         )
 
 

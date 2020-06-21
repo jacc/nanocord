@@ -2,6 +2,7 @@ import discord, requests, random, config
 from discord.ext import commands
 from discord import Webhook, RequestsWebhookAdapter, File
 from discord.ext.commands import has_permissions, MissingPermissions
+import datetime
 
 bot = commands.Bot(command_prefix=config.prefix)
 
@@ -18,7 +19,7 @@ async def on_ready():
 @bot.event
 async def on_command(ctx):
     if config.logging == True:
-        print(f"{ctx.author} used {ctx.command}")
+        print(f"[{datetime.datetime.now()}] {ctx.author} used {ctx.command}")
     else:
         pass
 

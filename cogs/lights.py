@@ -32,7 +32,7 @@ class Lights(commands.Cog, name="Lighting Commands"):
 
         if req.status_code == 204:
             await Utils().sendEmbed(
-                ctx, description=f"Successfully turned {self.bot.deviceName} on.",
+                ctx, description=f"Successfully turned **{self.bot.deviceName}** on.",
             )
         else:
             await Utils().sendEmbed(
@@ -55,7 +55,7 @@ class Lights(commands.Cog, name="Lighting Commands"):
 
         if req.status_code == 204:
             await Utils().sendEmbed(
-                ctx, description=f"Successfully turned {self.bot.deviceName} off.",
+                ctx, description=f"Successfully turned **{self.bot.deviceName}** off.",
             )
         else:
             await Utils().sendEmbed(
@@ -80,7 +80,7 @@ class Lights(commands.Cog, name="Lighting Commands"):
             if req.status_code == 204:
                 await Utils().sendEmbed(
                     ctx,
-                    description=f":white_check_mark: Set brightness to `{args[0]}%`.",
+                    description=f":white_check_mark: Set **brightness** to `{args[0]}%`.",
                 )
             else:
                 await Utils().sendEmbed(
@@ -93,7 +93,7 @@ class Lights(commands.Cog, name="Lighting Commands"):
 
             await Utils().sendEmbed(
                 ctx,
-                description=f':high_brightness: Brightness is currently set to `{req.json()["value"]}%`.',
+                description=f':high_brightness: **Brightness** is currently set to `{req.json()["value"]}%`.',
             )
 
     @commands.command(pass_context=True)
@@ -113,7 +113,7 @@ class Lights(commands.Cog, name="Lighting Commands"):
 
             if req.status_code == 204:
                 await Utils().sendEmbed(
-                    ctx, description=f":white_check_mark: Set hue to `{args[0]}%`.",
+                    ctx, description=f":white_check_mark: Set **hue** to `{args[0]}%`.",
                 )
             else:
                 await Utils().sendEmbed(
@@ -126,7 +126,7 @@ class Lights(commands.Cog, name="Lighting Commands"):
 
             await Utils().sendEmbed(
                 ctx,
-                description=f':high_brightness: Hue is currently set to `{req.json()["value"]}%`.',
+                description=f':high_brightness: **Hue** is currently set to `{req.json()["value"]}%`.',
             )
 
     @commands.command(pass_context=True)
@@ -147,7 +147,7 @@ class Lights(commands.Cog, name="Lighting Commands"):
             if req.status_code == 204:
                 await Utils().sendEmbed(
                     ctx,
-                    description=f":white_check_mark: Set saturation to `{args[0]}%`.",
+                    description=f":white_check_mark: Set **saturation** to `{args[0]}%`.",
                 )
             else:
                 await Utils().sendEmbed(
@@ -160,7 +160,7 @@ class Lights(commands.Cog, name="Lighting Commands"):
 
             await Utils().sendEmbed(
                 ctx,
-                description=f':high_brightness: Saturation is currently set to `{req.json()["value"]}%`.',
+                description=f':high_brightness: **Saturation** is currently set to `{req.json()["value"]}%`.',
             )
 
     @commands.command(pass_context=True)
