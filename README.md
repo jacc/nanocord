@@ -41,3 +41,7 @@
 
 - If you'd like the commands to be executable by any user, modify `owner_only` in `config.py` to `False`.
 - If you'd like to log who uses each command, modify `logging` in `config.py` to `True`.
+
+## Inspiration
+
+[Huecord](https://github.com/ven/huecord)

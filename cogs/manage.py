@@ -8,7 +8,7 @@ from discord.ext.commands import has_permissions, MissingPermissions
 from .utils import Utils
 
 
-class Manage(commands.Cog, name="Manage Aurora Commands"):
+class Manage(commands.Cog, name="Management Commands"):
     def __init__(self, bot):
         self.bot = bot
 
